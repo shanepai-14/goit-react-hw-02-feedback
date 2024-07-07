@@ -11,7 +11,7 @@ import {
 
 const router = createBrowserRouter([
   {
-    path: "/feedback-app/",
+    path: "/goit-react-hw-02-feedback/",
     element: <App />
   },
   {
