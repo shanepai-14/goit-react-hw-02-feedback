@@ -11,14 +11,10 @@ import {
 
 const router = createBrowserRouter([
   {
-    path: "/goit-react-hw-02-feedback",
-    element: <App />
-  },
-  {
     element: <Layout />,
     children: [
       {
-        path: "/goit-react-hw-02-feedback/feedback",
+        path: "/goit-react-hw-02-feedback",
         element: <Feedback/>,
       }
       ],
