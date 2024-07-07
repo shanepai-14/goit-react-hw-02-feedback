@@ -9,7 +9,7 @@ const Header = () => {
     const location = useLocation();
 
     useEffect(() => {
-        if (location.pathname === '/goit-react-hw-02-feedback') {
+        if (location.pathname === '/goit-react-hw-02-feedback/') {
             setValue(0);
         } if (location.pathname === '/feedback') {
             setValue(1);
