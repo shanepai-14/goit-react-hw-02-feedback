@@ -18,7 +18,7 @@ const router = createBrowserRouter([
     element: <Layout />,
     children: [
       {
-        path: "/feedback",
+        path: "/goit-react-hw-02-feedback/feedback",
         element: <Feedback/>,
       }
       ],
