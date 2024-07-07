@@ -8,24 +8,23 @@ const Header = () => {
     const location = useLocation();
 
     useEffect(() => {
-        if (location.pathname === '/goit-react-hw-02-feedback') {
-            setValue(0);
-        } if (location.pathname === '/goit-react-hw-02-feedback/feedback') {
-            setValue(1);
-        } else {
-            setValue(2);
-        }
+        if (location.pathname === '/goit-react-hw-02-feedback/')  setValue(0);
+         
+     
     }, [location]);
     
     const handleChange = (event, newValue) => {
       setValue(newValue);
   
     };
+    const handleExternalLink = () => {
+      window.location.href = "https://shanepai-14.github.io/goit-react-hw-02-phonebook/";
+  };
     return (
         <Box sx={{ width: '100%', bgcolor: 'background.paper' }}>
         <Tabs value={value} onChange={handleChange} centered>
           <Tab label="Feedback" component={Link} to="/goit-react-hw-02-feedback/feedback" />
-          <Tab label="Contact" />
+          <Tab label="Contact" onClick={handleExternalLink} />
         </Tabs>
       </Box>
     )
