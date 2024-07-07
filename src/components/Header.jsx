@@ -5,7 +5,6 @@ import Tab from '@mui/material/Tab';
 import { Link, useNavigate ,useLocation} from 'react-router-dom';
 const Header = () => {
     const [value, setValue] = useState(0);
-    const navigate = useNavigate();
     const location = useLocation();
 
     useEffect(() => {
@@ -25,7 +24,6 @@ const Header = () => {
     return (
         <Box sx={{ width: '100%', bgcolor: 'background.paper' }}>
         <Tabs value={value} onChange={handleChange} centered>
-          <Tab label="Home" component={Link} to="/goit-react-hw-02-feedback" />
           <Tab label="Feedback" component={Link} to="/goit-react-hw-02-feedback/feedback" />
           <Tab label="Contact" />
         </Tabs>
