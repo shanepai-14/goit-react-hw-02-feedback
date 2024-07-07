@@ -9,7 +9,7 @@ function App() {
   return (
     <>
      <Stack spacing={2} direction="row">
-      <Link to="/feedback">
+      <Link to="/goit-react-hw-02-feedback/feedback">
       <Button>Feedback</Button>
       </Link>
  
