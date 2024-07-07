@@ -25,8 +25,8 @@ const Header = () => {
     return (
         <Box sx={{ width: '100%', bgcolor: 'background.paper' }}>
         <Tabs value={value} onChange={handleChange} centered>
-          <Tab label="Home" component={Link} to="/" />
-          <Tab label="Feedback" component={Link} to="/feedback" />
+          <Tab label="Home" component={Link} to="/goit-react-hw-02-feedback" />
+          <Tab label="Feedback" component={Link} to="/goit-react-hw-02-feedback/feedback" />
           <Tab label="Contact" />
         </Tabs>
       </Box>
